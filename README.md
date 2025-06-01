@@ -1,6 +1,6 @@
 # MCP Playground: Your Sandbox for Claude & Model Context Protocol 🚀
 
-**Unlock the full potential of Anthropic's Claude models by seamlessly integrating them with external tools and data sources via the Model Context Protocol (MCP). MCP Playground provides an intuitive, web-based interface to experiment, debug, and innovate.**
+**Unlock the full potential of Anthropic's Claude models by seamlessly integrating them with external tools and data sources via the Model Context Protocol (MCP). MCP Playground provides an intuitive, web-based interface to experiment, debug, and innovate, primarily with SSE-based MCP servers.**
 
 [![Try MCP Playground](https://img.shields.io/badge/Try%20Online-mcpsplayground.com-brightgreen?style=for-the-badge&logo=icloud)](https://mcpsplayground.com)
 
@@ -22,14 +22,14 @@ MCP Playground is packed with features designed for developers working with LLMs
     *   Directly chat with Anthropic's Claude models.
     *   Securely configure your Anthropic API key.
     *   Customize system prompts to guide Claude's behavior.
-*   **🔌 Seamless MCP Server Integration:**
-    *   **Add & Manage Servers:** Easily connect to any MCP server.
+*   **🔌 Seamless MCP Server Integration (SSE Focus):**
+    *   **Add & Manage Servers:** Easily connect to any **SSE-based** MCP server.
         *   **Quick Add:** Pre-configured examples (like Cloudflare Docs, DeepWiki) to get started instantly.
         *   **Manual Add:** Connect to your custom or private MCP servers.
     *   **Authentication Support:**
         *   **Open Servers:** Connect to public, no-auth MCP endpoints.
         *   **Bearer Token Auth:** Securely connect to servers requiring API key/bearer token authentication.
-        *   **OAuth 2.0 Flow:** Handles MCP servers requiring OAuth, guiding you through the authorization process in a popup.
+        *   **OAuth 2.0 Flow (Experimental):** Basic support for MCP servers requiring OAuth is in progress. Functionality may vary.
     *   **Live Server Status:** Real-time feedback on connection state (connecting, ready, authenticating, error).
     *   **View Server Capabilities:** Instantly see if a server provides Tools, Prompts, or Resources.
 *   **🛠️ Dynamic Tool Discovery & Execution:**
@@ -71,7 +71,7 @@ MCP Playground is packed with features designed for developers working with LLMs
 3.  **Add MCP Servers:**
     *   Go to the "MCP Servers" tab.
     *   Use "Quick Add" for example servers or "Add MCP Server Manually" for your own.
-    *   Provide a name, the server's SSE URL, and a bearer token if required.
+    *   Provide a name, the server's **SSE URL**, and a bearer token if required.
 4.  **Chat & Use Tools:**
     *   Head back to the "Chat" panel. Claude can now use tools from your connected servers!
     *   Explore the "Available Tools" panel to see what's discovered and even execute them manually.
@@ -80,9 +80,7 @@ MCP Playground is packed with features designed for developers working with LLMs
 
 ## 💡 What is MCP?
 
-The Model Context Protocol (MCP) is a specification that allows Language Models (like Claude) to securely and reliably interact with external tools, services, and data sources. It standardizes how an LLM agent discovers capabilities, calls tools, and receives results.
-
-MCP Playground helps you bridge the gap between your LLM and these powerful external extensions.
+The Model Context Protocol (MCP) is a specification that allows Language Models (like Claude) to securely and reliably interact with external tools, services, and data sources. It standardizes how an LLM agent discovers capabilities, calls tools, and receives results. MCP Playground primarily focuses on demonstrating these interactions with servers using the **Server-Sent Events (SSE)** transport for real-time updates.
 
 ---
 
@@ -92,7 +90,6 @@ Ready to supercharge your Claude development workflow?
 
 ➡️ [**Launch MCP Playground**](https://mcpsplayground.com)
 
-We're excited to see what you build! If you have feedback or feature requests, feel free to [open an issue](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME/issues) (update this link if you make the repo public for issues).
 
 ---
 
