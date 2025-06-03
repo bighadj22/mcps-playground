@@ -1,122 +1,167 @@
 # MCP Playground: Your Sandbox for Claude & Gemini with Model Context Protocol 🚀
 
-**Unlock the full potential of Anthropic's Claude models and Google's Gemini models by seamlessly integrating them with external tools and data sources via the Model Context Protocol (MCP). MCP Playground provides an intuitive, web-based interface to experiment, debug, and innovate with dual AI provider support, primarily with SSE-based MCP servers.**
+**Unlock the full potential of Anthropic's Claude models and Google's Gemini models by seamlessly integrating them with external tools and data sources via the Model Context Protocol (MCP). MCP Playground provides an intuitive, web-based interface to experiment, debug, and innovate with dual AI provider support, advanced tool management, and comprehensive customization options.**
 
 [![Try MCP Playground](https://img.shields.io/badge/Try%20Online-mcpsplayground.com-brightgreen?style=for-the-badge&logo=icloud)](https://mcpsplayground.com)
 
 ---
 
-<!-- Optional: Add a GIF or screenshot here -->
-<!-- ![MCP Playground Demo](link_to_your_gif_or_screenshot.gif) -->
 <p align="center">
-  <em>Imagine a place where you can instantly connect Claude or Gemini to any MCP-compliant server, test their tool-using capabilities, and see the magic unfold in real-time. That's MCP Playground.</em>
+  <em>The ultimate playground where you can instantly connect Claude or Gemini to any MCP-compliant server, customize their behavior with system prompts, selectively control tool access, and watch AI agents work with real-world capabilities in real-time.</em>
 </p>
 
 ---
 
 ## 🔥 Key Features
 
-MCP Playground is packed with features designed for developers working with LLMs and MCP:
+MCP Playground is the most comprehensive platform for developers working with LLMs and MCP:
 
-*   **🤖 Interactive AI Chat with Dual Provider Support:**
-    *   **Claude Support:** Chat with Anthropic's Claude models (claude-3-5-sonnet).
-    *   **Gemini Support:** Chat with Google's Gemini models (gemini-2.0-flash, gemini-1.5-pro, etc.).
-    *   **Flexible API Configuration:** Securely configure your Anthropic API key and/or Gemini API key.
-    *   **Model Selection:** Choose between different models from both providers.
-*   **🔌 Seamless MCP Server Integration (SSE Focus):**
-    *   **Add & Manage Servers:** Easily connect to any **SSE-based** MCP server.
-        *   **Quick Add:** Pre-configured examples (like Cloudflare Docs, DeepWiki) to get started instantly.
-        *   **Manual Add:** Connect to your custom or private MCP servers.
-    *   **Authentication Support:**
-        *   **Open Servers:** Connect to public, no-auth MCP endpoints.
-        *   **Bearer Token Auth:** Securely connect to servers requiring API key/bearer token authentication.
-        *   **OAuth 2.0 Flow (Experimental):** Basic support for MCP servers requiring OAuth is in progress. Functionality may vary.
-    *   **Live Server Status:** Real-time feedback on connection state (connecting, ready, authenticating, error).
-    *   **View Server Capabilities:** Instantly see if a server provides Tools, Prompts, or Resources.
-*   **🛠️ Dynamic Tool Discovery & Execution:**
-    *   **Browse Available Tools:** Automatically discover and list all tools exposed by your connected MCP servers.
-    *   **Cross-Provider Tool Compatibility:** Both Claude and Gemini can access the same MCP tools seamlessly.
-    *   **Inspect Tool Schemas:** View detailed information for each tool, including its name, description, and input parameters (schema).
-    *   **Manual Tool Execution:** Directly trigger any tool with custom arguments from the UI – perfect for testing and debugging.
-    *   **View Rich Tool Results:** See the complete, un-truncated JSON or text output from tool calls.
-*   **📚 Resource Exploration:**
-    *   Discover and list resources (e.g., files, documents) made available by connected MCP servers.
-    *   View resource metadata including URI and MIME type.
-*   **✨ Developer-Friendly Interface:**
-    *   **Intuitive Layout:** Separate panels for chat, server management, tools, and model configuration.
-    *   **AI Provider Selection:** Easy switching between Claude and Gemini providers.
-    *   **Real-time Feedback:** Toast notifications for connections, errors, and successful operations.
-*   **🔐 Secure API Key Management:**
-    *   Your Anthropic and Gemini API keys are stored locally in your browser and only sent directly to the agent backend when needed.
-    *   Easy to update or clear your API keys independently.
+### 🤖 **Advanced AI Chat with Dual Provider Support**
+*   **Claude Integration:** Full support for Anthropic's Claude models (claude-3-5-sonnet-20241022)
+*   **Gemini Integration:** Complete support for Google's Gemini models (gemini-2.0-flash, gemini-1.5-pro, gemini-1.5-flash, etc.)
+*   **Flexible API Configuration:** Securely manage your Anthropic and/or Gemini API keys independently
+*   **Dynamic Model Selection:** Switch between different models from both providers instantly
+*   **🆕 Custom System Prompts:** Define unique personalities and behaviors for both Claude and Gemini
+    
+
+### 🔌 **Professional MCP Server Integration**
+*   **Universal Server Support:** Connect to any **SSE-based** MCP server with enterprise-grade reliability
+*   **Quick Start Options:** Pre-configured examples (Cloudflare Docs, DeepWiki, GitHub) for instant testing
+*   **Custom Server Integration:** Connect to your private or specialized MCP servers
+*   **🆕 Production-Ready Authentication:**
+    *   **Open Servers:** Public, no-authentication endpoints
+    *   **Bearer Token Auth:** Secure API key/bearer token authentication
+    *   **OAuth 2.0 Flow:** Full OAuth support for enterprise MCP servers (now officially supported)
+*   **Capability Discovery:** Instant visibility into Tools, Prompts, and Resources per server
+
+### 🛠️ **Intelligent Tool Management & Control**
+*   **🆕 Advanced Tool Restriction:** Granular control over which tools AI can access
+    *   **All Tools Mode:** AI can use any available tool
+    *   **Selected Tools Mode:** Restrict AI to specific tools only
+    *   **No Tools Mode:** Pure text-based AI responses
+    *   **Real-time Tool Selection:** Dynamic tool restriction during conversations
+*   **Cross-Provider Compatibility:** Same tools work seamlessly with both Claude and Gemini
+*   **Dynamic Tool Discovery:** Automatically discover and categorize all available tools
+*   **Detailed Tool Inspection:** View complete schemas, parameters, and descriptions
+*   **Manual Tool Testing:** Execute any tool directly with custom parameters for debugging
+*   **Rich Result Display:** Complete, untruncated JSON and text outputs with syntax highlighting
+
+### ✨ **Developer Experience Excellence**
+*   **Intuitive Multi-Panel Interface:** Organized workspace with chat, server management, tools, and configuration
+*   **Provider Switching:** Seamless switching between Claude and Gemini mid-conversation
+*   **Real-Time Notifications:** Toast notifications for all operations (connections, errors, successes)
+*   **Responsive Design:** Works perfectly on desktop, tablet, and mobile devices
+
+### 🔐 **Enterprise-Grade Security**
+*   **Local Key Storage:** API keys stored securely in browser localStorage
+*   **Direct API Communication:** Keys sent only to official provider APIs
+*   **Independent Key Management:** Separate configuration for Claude and Gemini
+*   **Secure Server Connections:** TLS/SSL enforcement for all MCP communications
+
 ---
 
-## 🤔 Why Use MCP Playground?
+## 🤔 Why Choose MCP Playground?
 
-*   **Rapid Prototyping:** Quickly test how Claude or Gemini interact with new or existing MCP tools without writing extensive boilerplate code.
-*   **Cross-Provider Testing:** Compare how different AI models (Claude vs Gemini) handle the same tools and tasks.
-*   **Debug MCP Servers:** Isolate issues by directly calling tools on your MCP server and inspecting the raw responses.
-*   **Learn MCP:** A hands-on way to understand the Model Context Protocol and how different LLMs can leverage external capabilities.
-*   **Showcase Tool Capabilities:** Demonstrate the power of your MCP-enabled services to your team or clients across multiple AI providers.
-*   **Experiment Freely:** A dedicated environment to explore different, server configurations, tool combinations, and AI providers.
+*   **🚀 Rapid AI Development:** Test Claude and Gemini tool interactions without writing any code
+*   **🔄 Cross-Provider Comparison:** Compare how different AI models handle identical tasks and tools
+*   **🐛 Advanced Debugging:** Isolate MCP server issues with direct tool testing and comprehensive logging
+*   **📖 Learn by Doing:** Hands-on experience with Model Context Protocol across multiple AI providers
+*   **🎯 Precision Control:** Fine-tune AI behavior with system prompts and selective tool access
+*   **🎨 Showcase Capabilities:** Demonstrate your MCP-enabled services with professional-grade tooling
+*   **⚡ Instant Experimentation:** Test server configurations, tool combinations, and AI providers in real-time
 
 ---
 
 ## 🚀 Get Started in Minutes!
 
-1.  **Visit the Playground:** Go to [**mcpsplayground.com**](https://mcpsplayground.com).
-2.  **Configure Your AI Provider:**
-    *   Navigate to the "AI Model" (or "API") tab.
-    *   **For Claude:** Enter your Anthropic API Key (starts with `sk-ant-...`).
-    *   **For Gemini:** Enter your Google AI Studio API Key (starts with `AIza...`).
-    *   **Provider Selection:** Choose your preferred AI provider (Claude or Gemini).
-    *   **Model Selection:** Pick from available models (e.g., claude-3-5-sonnet, gemini-2.0-flash).
-    *   Optionally, set a custom system prompt.
-3.  **Add MCP Servers:**
-    *   Go to the "MCP Servers" tab.
-    *   Use "Quick Add" for example servers or "Add MCP Server Manually" for your own.
-    *   Provide a name, the server's **SSE URL**, and a bearer token if required.
-4.  **Chat & Use Tools:**
-    *   Head back to the "Chat" panel. Your chosen AI model can now use tools from your connected servers!
-    *   Switch between Claude and Gemini to compare their tool-using capabilities.
-    *   Explore the "Available Tools" panel to see what's discovered and even execute them manually.
+### 1. **Access the Playground**
+Visit [**mcpsplayground.com**](https://mcpsplayground.com/chat) - no login required!
+
+### 2. **Configure Your AI Provider**
+Navigate to the **"AI Model"** tab:
+*   **For Claude:** 
+    *   Enter your Anthropic API Key (get from [console.anthropic.com](https://console.anthropic.com))
+    *   Select your preferred Claude model
+    *   Optionally set a custom system prompt for Claude's personality
+*   **For Gemini:** 
+    *   Enter your Google AI Studio API Key (get from [aistudio.google.com](https://aistudio.google.com))
+    *   Choose from available Gemini models
+    *   Customize Gemini's behavior with system prompts
+
+### 3. **Connect MCP Servers**
+Go to the **"MCP Servers"** tab:
+*   **Quick Add:** Use pre-configured examples (Cloudflare Docs, DeepWiki, etc.)
+*   **Manual Add:** Connect your custom servers with SSE URLs and authentication
+*   **OAuth Setup:** Complete OAuth flows for enterprise servers with guided setup
+
+### 4. **Control Tool Access** ⭐ *New Feature*
+In the **"Available Tools"** panel:
+*   View all discovered tools from connected servers
+*   **Restrict Tools:** Choose exactly which tools your AI can access
+*   **Test Tools:** Execute tools manually with custom parameters
+*   **Monitor Usage:** See which tools AI uses during conversations
+
+### 5. **Start Advanced AI Conversations**
+*   Chat with Claude or Gemini using connected MCP tools
+*   Switch providers mid-conversation to compare responses
+*   Watch as AI intelligently selects and uses only the tools you've authorized
 
 ---
 
 ## 🤖 Supported AI Providers
 
-### Anthropic Claude
-*   **Models:** claude-3-5-sonnet-20241022
-*   **API Key:** Anthropic API Key (get from console.anthropic.com)
-*   **Features:** Advanced reasoning, tool calling, function execution
+### 🔷 **Anthropic Claude**
+*   **Models:** claude-3-5-sonnet-20241022 (flagship model)
+*   **API Key:** Anthropic Console ([console.anthropic.com](https://console.anthropic.com))
+*   **Strengths:** Advanced reasoning, thoughtful analysis, precise tool selection
+*   **System Prompt Support:** ✅ Full customization available
 
-### Google Gemini  
+### 🔶 **Google Gemini**  
 *   **Models:** 
-    *   gemini-2.0-flash-001 (latest)
-    *   gemini-2.0-flash
-    *   gemini-1.5-flash-001
-    *   gemini-1.5-flash
-    *   gemini-1.5-pro-001
-    *   gemini-1.5-pro
-*   **API Key:** Google AI Studio API Key (get from aistudio.google.com)
-*   **Features:** Fast inference, multimodal capabilities, function calling
+    *   `gemini-2.0-flash-001` (latest, fastest)
+    *   `gemini-2.0-flash`
+    *   `gemini-1.5-flash-001`
+    *   `gemini-1.5-flash`
+    *   `gemini-1.5-pro-001`
+    *   `gemini-1.5-pro` (most capable)
+*   **API Key:** Google AI Studio ([aistudio.google.com](https://aistudio.google.com))
+*   **Strengths:** Fast inference, multimodal capabilities, efficient tool calling
+*   **System Prompt Support:** ✅ Full customization available
 
 ---
 
 ## 💡 What is MCP?
 
-The Model Context Protocol (MCP) is a specification that allows Language Models (like Claude and Gemini) to securely and reliably interact with external tools, services, and data sources. It standardizes how an LLM agent discovers capabilities, calls tools, and receives results. MCP Playground primarily focuses on demonstrating these interactions with servers using the **Server-Sent Events (SSE)** transport for real-time updates, supporting both Anthropic's Claude and Google's Gemini models.
+The **Model Context Protocol (MCP)** is a standardized specification that enables Language Models like Claude and Gemini to securely interact with external tools, services, and data sources. MCP defines how AI agents:
+
+*   🔍 **Discover capabilities** from connected servers
+*   🛠️ **Execute tools** with proper parameter validation  
+*   📦 **Receive structured results** for further processing
+*   🔐 **Maintain security** through controlled access patterns
+
+MCP Playground demonstrates these interactions using **Server-Sent Events (SSE)** transport for real-time communication, supporting both Anthropic's Claude and Google's Gemini with advanced tool management features.
 
 ---
 
-## ✨ Try MCP Playground Now!
+## ✨ Experience the Future of AI Tool Integration
 
-Ready to supercharge your Claude and Gemini development workflow?
+Ready to supercharge your AI development workflow with the most advanced MCP testing platform?
 
-➡️ [**Launch MCP Playground**](https://mcpsplayground.com)
+➡️ [**Launch MCP Playground**](https://mcpsplayground.com/chat)
 
-Experience the power of dual AI provider support with seamless MCP integration!
+Discover what's possible when you give Claude and Gemini access to real-world tools with precision control!
 
 ---
 
-*Built for developers, by developers who love making AI more capable across multiple providers.*
+## 🏗️ Perfect For
+
+*   **AI Developers** building LLM applications with external capabilities
+*   **MCP Server Authors** testing and debugging their tool implementations  
+*   **Enterprise Teams** evaluating AI providers for tool-based workflows
+*   **Researchers** comparing Claude vs Gemini tool-using performance
+*   **Product Managers** demonstrating AI capabilities to stakeholders
+*   **Students & Educators** learning about AI agent architectures
+
+---
+
+*Built by developers who believe AI should be more capable, controllable, and accessible across all major providers.*
